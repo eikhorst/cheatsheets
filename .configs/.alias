@@ -1,0 +1,2 @@
+alias islarge="find . -type f -size +10M -exec ls -lh {} \;"
+alias rmlarge="ls -S | head -n 10 | sed -e 's,.*,\"&\",g' | xargs rm"
